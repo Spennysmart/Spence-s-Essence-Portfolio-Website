@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="description" content="Personal poetfolio website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+    
+  <script src="https://kit.fontawesome.com/0833c392ce.js" crossorigin="anonymous"></script>
+  
+  <style>
+          @media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  border: none;
+  margin: none;
+  font-size: 20px;
+}
+
+body {
+  background-color: rgba(250,225,200,1);
+}
+
+h1,h2,h3 {
+  font-family: 'Inter', sans-serif;
+  color: purple;
+}
+
+p,a {
+  text-decoration: none;
+  font-family: 'Fredoka', sans-serif;
+  color: rgba(55,55,55,0.9);
+}
+
+main {
+  text-align: center;
+}
+
+#header {
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 10%;
+  z-index: 2;
+  background-color: rgba(255,230,205,1);
+}
+
+#logo {
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#logoStyle {
+  font-family: 'Fredoka', sans-serif;
+  font-size: inherit;
+  color: purple;
+}
+
+#themeToggle {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+#navBar {
+}
+
+#navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+#navBar ul li {
+  list-style-type: none;
+  margin: auto;
+}
+
+#navBar ul li a{
+  padding: 3px;
+}
+
+#landing {
+  margin-top: 10vh;
+  margin-bottom: 20px;
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+  display: grid;
+  grid-template-rows: 8fr 2fr;
+  justify-items: center;
+  z-index: 1;
+}
+
+#you {
+  width: 90vw;
+  font-family: 'Fredoka', sans-serif;
+  font-style: bold;
+  font-size: 500%;
+  color: purple;
+  margin-left: 5vh;
+  text-align: left;
+}
+
+#cta {
+  color: white;
+  background-color: purple;
+  border: 1px solid purple;
+  border-radius: 20px;
+  padding: 1px 2px;
+  width: 100px;
+  height: 25px;
+  transition: width 0.75s, height 0.5s;
+  cursor: pointer;
+  animation-name: btn;
+  animation-duration: 0.1s;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#cta:hover {
+  width: 125px;
+  height: 30px;
+}
+
+.card:hover {
+  width: 100vw;
+  height: auto;
+}
+
+#aboutMe {
+  background-color: rgba(250,240,230,1);
+  border: 3px solid rgba(55,55,255,1);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  transform: rotate(-1deg);
+}
+
+#mySkills1 {
+  background-color: rgba(250,240,230,1);
+  border: 3px solid rgba(55,255,55,1);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  transform: rotate(1deg);
+}
+
+#mySkills2 {
+  background-color: rgba(250,240,230,1);
+  border: 3px solid rgba(255,55,55,1);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  transform: rotate(-1deg);
+}
+
+#projects {
+  background-color: rgba(250,240,230,1);
+  border: 3px solid rgba(255,55,255,1);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  transform: rotate(1deg);
+}
+
+#git {
+  background-color: rgba(250,240,230,1);
+  border: 3px solid rgba(55,255,255,1);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  transform: rotate(-1deg);
+}
+
+footer {
+  margin-top: 20px;
+  background-color: rgba(255,230,205,1);
+  padding: 20px;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  width: 100vw;
+}
+  </style>
+
+  <title>Spence's Essence</title>
+</head>
+<body>
+  <main id="main">
+    <!-- Top Heading -->
+    <header id="header">
+      <section id="logo">
+        <span id="logoStyle">Es</span>sence<span id="logoStyle">.</span>
+      </section>
+      <!-- <a id="themeToggle" type="button"> ● </a> -->
+      <nav id="navBar">
+        <ul>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#mySkills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#git">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Landing Page -->
+    <div id="landing">
+        <section id="you">You Imagine<br> I Create</section>
+        <button id="cta" type="button">Hire us</button>
+    </div>
+    
+    <!-- About Me page -->
+    <div id="aboutMe" class="card">
+      <h2>About me</h2>
+      <p>
+        I am a web developer passionate about building elegant and functional websites.
+        Creativity and Elegance are my watchwords. If you ever need beautiful and functional websites.
+        I am the right person to hire.
+      </p>
+    </div>
+    
+    <!-- Skills and Experience Section -->
+    <div id="mySkills1" class="card">
+      <h2>Acquired Skills</h2>
+      <div id="skills"><p><i class="fa-brands fa-html5"></i>HTML5</p></div>
+      <div id="skills"><p><i class="fa-brands fa-css3"></i>CSS3</p></div>
+      <div id="skills"><p><i class="fa-solid fa-code"></i>Responsive Web design</p></div>
+    </div>
+    <div id="mySkills2" class="card">
+      <h2>Skills (In training)</h2>
+      <div id="skills"><p><i class="fa-brands fa-js"></i>JavaScript</p></div>
+      <div id="skills"><p><i class="fa-brands fa-react"></i>React</p></div>
+      <div id="skills"><p><i class="fa-brands fa-github"></i>Version Control</p></div>
+    </div>
+    
+    <!-- Project Section-->
+    <div id="projects" class="card">
+      <h2>My Projects</h2>
+      <ul>
+        <li><a href="" target="_blank">Fully Responsive Personal Portfolio Website</a></li>
+      </ul>
+       <p><em>Stay tuned for updates</em></p>
+      <p><em>(in progress...)</em></p>
+    </div>
+    
+    <!-- Contact me section -->
+    <div id="git" class="card">
+      <h3>Get In Touch</h4>
+      <p>I'm open to <strong>collaborations, internships, freelance gigs</strong> or just a chat about web and AI. Lets connect and build the future</p>
+      <!--Connect to Email, Linkedin, Github accounts using image-->
+      <a href="https://bsky.app/profile/spence-essence.bsky.social">
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+      <a href="https://www.facebook.com/spencer/">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://github.com/Spennysmart">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://x.com/spence_essence">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+        <!--Add Email Contact form-->
+      <p>Based in Nigeria| Open to remote work</p>
+    </div><br>
+
+    <footer>
+      <p>All Rights Reserved. <a href="" target="_blank">Spencer</a> 2025</p>
+    </footer>
+  </main>
+</body>
+</html>
